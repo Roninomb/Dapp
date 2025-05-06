@@ -32,7 +32,7 @@ class _MainAppState extends State<MainApp> {
                 controller: inputController1,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'User',
+                  labelText: 'Campo de usuario vacio',
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class _MainAppState extends State<MainApp> {
                 controller: inputController2,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Password',
+                  labelText: 'Campo de contraseña vacia',
                 ),
                 obscureText: true,
               ),
@@ -51,6 +51,7 @@ class _MainAppState extends State<MainApp> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                
                 setState(() {
                   inputText1 = inputController1.text;
                   inputText2 = inputController2.text;
