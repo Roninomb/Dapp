@@ -1,0 +1,23 @@
+Product myproduct =  product("iphone", 1000);
+list <product> products;
+myproduct.name = "iphone2"
+myproduct.price = 3000
+if (myproduct.isFree())
+{
+print("Felicitaciones");
+}
+
+
+
+Class Product{
+string name;
+int price; // atributos
+
+boolean isFree(){
+return this.price == 0 ;
+}
+void product (string name, int price){
+this.name = name
+this.price = price
+}
+} // class
